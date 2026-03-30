@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ria Wulandari – Portfolio Website</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand brand-text" href="#hero">RW.</a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul
+            class="navbar-nav ms-auto align-items-lg-center gap-1 mb-2 mb-lg-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#education"
+                >Education</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#quote">Motivasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- Tombol dark/light mode -->
+          <button
+            class="btn-theme ms-lg-3"
+            id="themeToggle"
+            title="Toggle Dark/Light Mode"
+          >
+            <i class="bi bi-moon-fill" id="themeIcon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+       SECTION 1 – HEADER / PROFILE
+       Menampilkan foto, nama, NIM, dan deskripsi singkat
+       ============================================================ -->
+    <section id="hero">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <!-- Teks -->
+          <div class="col-lg-7 fade-in">
+            <div class="hero-badge">
+              <i class="bi bi-mortarboard-fill"></i>
+              Teknik Informatika – Universitas Telkom Purwokerto
+            </div>
+
+            <h1 class="hero-name">Ria <span>Wulandari</span></h1>
+
+            <!-- NIM ditampilkan jelas -->
+            <div class="hero-nim">
+              <i class="bi bi-person-badge me-1"></i> NIM: 2311102173
+            </div>
+
+            <p class="hero-role">Mahasiswa Teknik Informatika</p>
+
+            <p class="hero-desc">
+              Saya adalah mahasiswa Teknik Informatika yang memiliki minat dalam
+              pengembangan aplikasi web dan sistem informasi. Saya tertarik
+              mempelajari teknologi seperti Java, JavaScript, serta pengembangan
+              sistem berbasis database untuk membantu menyelesaikan permasalahan
+              dalam kehidupan sehari-hari.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#portfolio" class="btn-gradient">
+                <i class="bi bi-folder2-open"></i> Lihat Project
+              </a>
+              <a href="#contact" class="btn-outline-custom">
+                <i class="bi bi-envelope"></i> Hubungi Saya
+              </a>
+            </div>
+          </div>
+
+          <!-- Foto Profil -->
+          <div class="col-lg-5 text-center fade-in">
+            <div class="hero-photo-wrap">
+              <img
+                src="1770182892648.png"
+                alt="Foto Profil Ria Wulandari"
+                class="hero-photo"
+              />
+            </div>
+            <!-- Statistik singkat -->
+            <div class="d-flex justify-content-center gap-4 mt-4">
+              <div class="text-center">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Project</div>
+              </div>
+              <div class="text-center">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Teknologi</div>
+              </div>
+              <div class="text-center">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Semangat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SECTION 2 – ABOUT ME
+       ============================================================ -->
+    <section id="about">
+      <div class="container">
+        <div class="text-center mb-5 fade-in">
+          <div class="section-label">Tentang Saya</div>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="row g-4 align-items-center">
+          <!-- Paragraf -->
+          <div class="col-lg-8 fade-in">
+            <div class="card-custom">
+              <p class="about-text">
+                Saya adalah mahasiswa Teknik Informatika di
+                <strong>Universitas Telkom Purwokerto</strong>
+                yang memiliki minat pada bidang pengembangan perangkat lunak dan
+                sistem informasi berbasis web.
+              </p>
+              <p class="about-text">
+                Saya memiliki pengalaman dalam membuat beberapa proyek aplikasi
+                seperti sistem manajemen kos-kosan, aplikasi pelacak siklus
+                menstruasi, serta aplikasi berbasis web lainnya.
+              </p>
+              <p class="about-text mb-0">
+                Saya senang mempelajari teknologi baru dan berusaha
+                mengembangkan kemampuan saya dalam bidang pemrograman, khususnya
+                pada pengembangan web dan sistem berbasis database.
+              </p>
+            </div>
+          </div>
+
+          <!-- Highlight cards -->
+          <div class="col-lg-4 fade-in">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="about-card">
+                  <div class="about-card-icon">
+                    <i class="bi bi-globe2"></i>
+                  </div>
+                  <div class="about-card-title">Web Dev</div>
+                  <div class="about-card-sub">Frontend & Backend</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="about-card">
+                  <div class="about-card-icon">
+                    <i class="bi bi-database"></i>
+                  </div>
+                  <div class="about-card-title">Database</div>
+                  <div class="about-card-sub">MySQL & SQL</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="about-card">
+                  <div class="about-card-icon">
+                    <i class="bi bi-code-slash"></i>
+                  </div>
+                  <div class="about-card-title">Programming</div>
+                  <div class="about-card-sub">Java & JS</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="about-card">
+                  <div class="about-card-icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="about-card-title">Teamwork</div>
+                  <div class="about-card-sub">Kolaborasi tim</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SECTION 3 – EDUCATION (TIMELINE)
+       ============================================================ -->
+    <section id="education" class="section-alt">
+      <div class="container">
+        <div class="text-center mb-5 fade-in">
+          <div class="section-label">Pendidikan</div>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-7 fade-in">
+            <div class="timeline">
+              <!-- SMA -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-period">2018 - 2021</span>
+                <div class="card-custom">
+                  <div class="d-flex align-items-start gap-3">
+                    <i class="bi bi-building edu-icon text-muted-icon"></i>
+                    <div>
+                      <div class="edu-title">SMA / Sederajat</div>
+                      <div class="edu-sub">SMA Negeri 1 Sokaraja</div>
+                      <div class="edu-desc">
+                        Menyelesaikan pendidikan menengah atas dengan minat di
+                        bidang sains, matematika, dan teknologi komputer.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Universitas (Aktif) -->
+              <div class="timeline-item">
+                <div class="timeline-dot active"></div>
+                <span class="timeline-period active">2023 — Sekarang</span>
+                <span class="badge-aktif ms-2">● Aktif</span>
+                <div class="card-custom card-active">
+                  <div class="d-flex align-items-start gap-3">
+                    <i
+                      class="bi bi-mortarboard-fill edu-icon text-primary-icon"
+                    ></i>
+                    <div>
+                      <div class="edu-title">S1 Teknik Informatika</div>
+                      <div class="edu-sub">Universitas Telkom Purwokerto</div>
+                      <div class="edu-desc">
+                        Sedang menempuh studi dengan fokus pada pengembangan
+                        perangkat lunak, sistem informasi, dan teknologi
+                        database. Aktif mengerjakan proyek nyata dan
+                        mengembangkan keterampilan teknis secara berkelanjutan.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SECTION 4 – SKILLS
+       ============================================================ -->
+    <section id="skills">
+      <div class="container">
+        <div class="text-center mb-5 fade-in">
+          <div class="section-label">Keterampilan</div>
+          <h2 class="section-title">Skills</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Programming Skills (Progress Bar) -->
+          <div class="col-lg-6 fade-in">
+            <div class="card-custom h-100">
+              <h6 class="skills-group-title">
+                <i class="bi bi-code-slash me-2"></i>Programming
+              </h6>
+              <!-- HTML -->
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span class="skill-name">HTML</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="90"></div>
+                </div>
+              </div>
+              <!-- CSS -->
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span class="skill-name">CSS</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="85"></div>
+                </div>
+              </div>
+              <!-- JavaScript -->
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="75"></div>
+                </div>
+              </div>
+              <!-- Java -->
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-pct">70%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="70"></div>
+                </div>
+              </div>
+              <!-- MySQL -->
+              <div class="skill-item" style="margin-bottom: 0">
+                <div class="d-flex justify-content-between">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-pct">72%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="72"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Soft Skills (Badge) -->
+          <div class="col-lg-6 fade-in">
+            <div class="row g-4 h-100">
+              <div class="col-12">
+                <div class="card-custom">
+                  <h6 class="skills-group-title">
+                    <i class="bi bi-tools me-2"></i>Tools
+                  </h6>
+                  <div>
+                    <span class="badge-tech">Bootstrap</span>
+                    <span class="badge-tech">GitHub</span>
+                    <span class="badge-tech">Figma</span>
+                    <span class="badge-tech">VS Code</span>
+                    <span class="badge-tech">XAMPP</span>
+                    <span class="badge-tech">Postman</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card-custom">
+                  <h6 class="skills-group-title">
+                    <i class="bi bi-person-check me-2"></i>Soft Skills
+                  </h6>
+                  <div>
+                    <span class="badge-soft">Problem Solving</span>
+                    <span class="badge-soft">Teamwork</span>
+                    <span class="badge-soft">Communication</span>
+                    <span class="badge-soft">Critical Thinking</span>
+                    <span class="badge-soft">Adaptability</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SECTION 5 – PORTFOLIO / PROJECT
+       ============================================================ -->
+    <section id="portfolio" class="section-alt">
+      <div class="container">
+        <div class="text-center mb-5 fade-in">
+          <div class="section-label">Portfolio</div>
+          <h2 class="section-title">Project Saya</h2>
+          <p class="section-sub">Beberapa proyek yang telah saya kerjakan</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1: Sistem Manajemen Kos -->
+          <div class="col-md-4 fade-in">
+            <div class="card-custom project-card h-100">
+              <div
+                class="project-icon"
+                style="background: linear-gradient(135deg, #2563eb, #60a5fa)"
+              >
+                🏠
+              </div>
+              <h5 class="project-title">Sistem Manajemen Kos-kosan</h5>
+              <p class="project-desc">
+                Aplikasi berbasis desktop untuk membantu pemilik kos mengelola
+                data kamar dan penyewa secara lebih terstruktur dan efisien.
+              </p>
+              <ul class="project-features">
+                <li>CRUD data kamar</li>
+                <li>CRUD data penyewa</li>
+                <li>Penyimpanan database MySQL</li>
+                <li>Pengelolaan data penghuni</li>
+              </ul>
+              <div class="d-flex flex-wrap gap-2 mt-auto pt-3">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: FemiCal -->
+          <div class="col-md-4 fade-in">
+            <div class="card-custom project-card h-100">
+              <div
+                class="project-icon"
+                style="background: linear-gradient(135deg, #ec4899, #8b5cf6)"
+              >
+                🌸
+              </div>
+              <h5 class="project-title">FemiCal – Pelacak Siklus Menstruasi</h5>
+              <p class="project-desc">
+                Aplikasi berbasis web untuk membantu pengguna mencatat siklus
+                menstruasi dan memantau kondisi kesehatan reproduksi secara
+                personal.
+              </p>
+              <ul class="project-features">
+                <li>Pencatatan siklus menstruasi</li>
+                <li>Pencatatan gejala</li>
+                <li>Perkiraan masa subur</li>
+                <li>Informasi kesehatan</li>
+              </ul>
+              <div class="d-flex flex-wrap gap-2 mt-auto pt-3">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Seruput -->
+          <div class="col-md-4 fade-in">
+            <div class="card-custom project-card h-100">
+              <div
+                class="project-icon"
+                style="background: linear-gradient(135deg, #f59e0b, #2563eb)"
+              >
+                ☕
+              </div>
+              <h5 class="project-title">Seruput – Aplikasi Berbasis Web</h5>
+              <p class="project-desc">
+                Aplikasi berbasis web untuk menampilkan informasi produk minuman
+                serta memudahkan pengguna melihat menu yang tersedia dengan
+                tampilan modern.
+              </p>
+              <ul class="project-features">
+                <li>Menampilkan menu minuman</li>
+                <li>Tampilan produk interaktif</li>
+                <li>Navigasi yang mudah</li>
+                <li>Desain responsif</li>
+              </ul>
+              <div class="d-flex flex-wrap gap-2 mt-auto pt-3">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SECTION 6 – QUOTE MOTIVASI (AJAX + API)
+       Mengambil data dari api.quotable.io menggunakan AJAX
+       ============================================================ -->
+    <section id="quote">
+      <div class="container">
+        <div class="text-center mb-5 fade-in">
+          <div class="section-label">Motivasi Harian</div>
+          <h2 class="section-title">Quote of the Day</h2>
+          <p class="section-sub">
+            Data diambil secara dinamis menggunakan <strong>AJAX</strong> dari
+            Public API
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 fade-in">
+            <div class="quote-card text-center">
+              <!-- Ikon dekoratif -->
+              <i class="bi bi-quote quote-icon-deco"></i>
+
+              <!-- Loading spinner (tersembunyi default) -->
+              <div id="quote-loading" style="display: none" class="my-4">
+                <div class="spinner-border spinner-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="loading-text">Mengambil quote dari API...</p>
+              </div>
+
+              <!-- Konten quote -->
+              <p id="quote-text" class="quote-text">
+                "Memuat quote motivasi..."
+              </p>
+              <p id="quote-author" class="quote-author">— ...</p>
+
+              <!-- Info implementasi AJAX -->
+              <div class="ajax-info">
+                <i class="bi bi-info-circle me-1"></i>
+                Implementasi <strong>XMLHttpRequest (AJAX)</strong> →
+                <code>api.quotable.io/random</code>
+              </div>
+
+              <!-- Tombol Generate Quote -->
+              <button
+                class="btn-refresh"
+                id="btnRefresh"
+                onclick="fetchQuote()"
+              >
+                <i class="bi bi-arrow-clockwise" id="refreshIcon"></i>
+                Generate Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       SECTION 7 – CONTACT
+       ============================================================ -->
+    <section id="contact" class="section-alt">
+      <div class="container">
+        <div class="text-center mb-5 fade-in">
+          <div class="section-label">Kontak</div>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-sub">Jangan ragu untuk menghubungi saya!</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6 fade-in">
+            <a href="mailto:ria@example.com" class="contact-link">
+              <div
+                class="contact-icon-wrap"
+                style="background: rgba(37, 99, 235, 0.1); color: #2563eb"
+              >
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">riawulandari0774@gmail.com</div>
+              </div>
+              <i class="bi bi-arrow-right ms-auto contact-arrow"></i>
+            </a>
+
+            <a
+              href="https://github.com/riawulandari"
+              target="_blank"
+              class="contact-link"
+            >
+              <div
+                class="contact-icon-wrap"
+                style="background: rgba(36, 41, 47, 0.08); color: #24292f"
+              >
+                <i class="bi bi-github"></i>
+              </div>
+              <div>
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">github.com/riawulandari</div>
+              </div>
+              <i class="bi bi-arrow-right ms-auto contact-arrow"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/riaarrii?igsh=YnF1a2F2YzB1dm8w"
+              target="_blank"
+              class="contact-link"
+            >
+              <div
+                class="contact-icon-wrap"
+                style="background: rgba(225, 48, 108, 0.1); color: #e1306c"
+              >
+                <i class="bi bi-instagram"></i>
+              </div>
+              <div>
+                <div class="contact-label">Instagram</div>
+                <div class="contact-value">@riaarrii</div>
+              </div>
+              <i class="bi bi-arrow-right ms-auto contact-arrow"></i>
+            </a>
+
+            <div class="text-center mt-4">
+              <a href="mailto:ria@example.com" class="btn-gradient">
+                <i class="bi bi-send-fill"></i> Kirim Email Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+    <footer>
+      <div class="container text-center">
+        <p class="mb-1">
+          <strong>Ria Wulandari</strong> &nbsp;|&nbsp; NIM: 2311102173
+        </p>
+        <p class="footer-sub">
+          S1 Teknik Informatika – Universitas Telkom Purwokerto &nbsp;
+          <i class="bi bi-heart-fill" style="color: #ec4899"></i>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
